@@ -1,8 +1,12 @@
 *{
   margin:0
 }
+/*https://coolors.co/e3e7d3-bdc2bf-989c94-373d29-e6e49f*/
 body {
-  --bg-color: #231C07;
+  --bg-color: #25291C;
+  --bg-color-light: #373D29;
+  --bg-color-dark: #212518;
+  --beige:#E3E7D3;
   overflow: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

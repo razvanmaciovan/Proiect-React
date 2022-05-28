@@ -35,7 +35,7 @@ align-items: center;
 justify-content: space-between;
 padding: 10px 0;
 background-color: var(--bg-color);
-color:white;`;
+color:var(--beige);`;
 const HeaderRight = styled.div`
 flex:0.3;
 display:flex;
@@ -61,7 +61,7 @@ const HeaderSearch = styled.div`
 flex:0.4;
 opacity:1;
 border-radius:6px;
-background-color:#392A16;
+background-color:var(--bg-color-light);
 text-align:center;
 display:flex;
 padding:0px 10px;
@@ -74,7 +74,7 @@ border:1px solid grey;
    text-align:center;
    min-width:30vw;
    outline: 0;
-   color:white;
+   color:var(--beige);
 }
 `;
 
