@@ -26,7 +26,7 @@ function Sidebar() {
     <SidebarContainer>
         <SidebarHeader>
             <SidebarInfo>
-                <h2>PLF Lab sg5</h2>
+                <h2>PLF Lab</h2>
                 <h3>
                     <FiberManualRecordIcon />
                     {user.displayName}
