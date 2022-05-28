@@ -14,11 +14,13 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AddIcon from '@material-ui/icons/Add';
 import SidebarOption from './SidebarOption';
 import {useCollection} from "react-firebase-hooks/firestore";
-import { db } from '../firebase';
+import { auth, db } from '../firebase';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 
 function Sidebar() {
-    const [channels, loading, error] = useCollection(db.collection("rooms"));
+    const [channels] = useCollection(db.collection("rooms"));
+    const [user] = useAuthState(auth);
 
   return (
     <SidebarContainer>
@@ -27,7 +29,7 @@ function Sidebar() {
                 <h2>PLF Lab sg5</h2>
                 <h3>
                     <FiberManualRecordIcon />
-                    Razvan Maciovan
+                    {user.displayName}
                 </h3>
             </SidebarInfo>
             <CreateIcon />
